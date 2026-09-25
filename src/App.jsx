@@ -5,11 +5,12 @@ export default function App() {
 return ( 
 <BrowserRouter>
   <div className="min-h-screen bg-white">
+import AppRoutes from "./pages/App_routes";
 
     <Header />
 
     <Routes>
-
+export default App;
       <Route
         path="/"
         element={<Home />}
