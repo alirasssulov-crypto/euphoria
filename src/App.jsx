@@ -1,11 +1,12 @@
+
+import AppRoutes from "./pages/App_routes";
+
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-blue-600">
-        React + Tailwind v4
-      </h1>
-    </div>
+  <>
+  <AppRoutes />
+  </>
   )
 }
 
-export default App
+export default App;
