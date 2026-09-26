@@ -1,32 +1,20 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header"; import Footer from "./components/Footer";
-import Home from "./pages/Home"; import ContactDetails from "./pages/ContactDetails";
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import ContactDetails from "./pages/ContactDetails";
+
 export default function App() {
-return ( 
-<BrowserRouter>
-  <div className="min-h-screen bg-white">
-import AppRoutes from "./pages/App_routes";
+  return (
+    <div className="min-h-screen bg-white">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
 
-    <Header />
+        <Route path="/account" element={<ContactDetails />} />
+      </Routes>
 
-    <Routes>
-export default App;
-      <Route
-        path="/"
-        element={<Home />}
-      />
-
-      <Route
-        path="/account"
-        element={<ContactDetails />}
-      />
-
-    </Routes>
-
-    <Footer />
-
-  </div>
-
-</BrowserRouter>
-); 
+      <Footer />
+    </div>
+  );
 }
